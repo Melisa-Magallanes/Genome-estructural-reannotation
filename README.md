@@ -29,6 +29,18 @@ https://github.com/cstubben/trinotateR
 
 
 # Genome re-annotation
+Funannotate is a genome prediction, annotation, and comparison software package. It was originally written to annotate fungal genomes (small eukaryotes ~ 30 Mb genomes), but has evolved over time to accomodate larger genomes. 
 https://github.com/nextgenusfs/funannotate
+
+We strongly encourage you to follow the tutorial as described here, don't skip any step 
+https://funannotate.readthedocs.io/en/latest/tutorials.html#tutorials
+
+As we recommended for Trinity, the Funannotate docker image will be the best option to run jobs in remote servers
+
+And luckily you will finally have as a result a better genome annotation at the end.
+# Aditional tools
 https://github.com/nanoporetech/spliced_bam2gff
+https://github.com/DaehwanKimLab/hisat2
+https://github.com/gpertea/stringtie
+
 # Citation 
