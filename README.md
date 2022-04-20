@@ -23,12 +23,12 @@ Trinity --seqType fq --samples_file samples.txt --SS_lib_type RF --CPU 60 --max_
 where samples.txt is a tab-delimited text file indicating biological replicate relationships
 
 # Transcriptome annotation
+https://github.com/Trinotate/Trinotate
+trinotateR is an R package to summarize annotation reports from Trinotate.
+https://github.com/cstubben/trinotateR
 
 
-
-
-TRANSDECODER
-
-TRINOTATE
-
-FUNANNOTATE
+# Genome re-annotation
+https://github.com/nextgenusfs/funannotate
+https://github.com/nanoporetech/spliced_bam2gff
+# Citation 
