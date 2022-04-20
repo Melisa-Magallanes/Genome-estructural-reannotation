@@ -1,16 +1,31 @@
 # Genome-estructural-reannotation
-Pipeline to reannotate a genome with RNAseq data as evidence
+Pipeline to reannotate an existant genome with RNAseq data as evidence
 
-#Contents
-RNAseq sample preparation
+# Contents
+# RNAseq sample preparation
 
-FASTQC
+In order to check RNA seq samples quality, first some parameters should be analyzed through FastQC
+https://www.bioinformatics.babraham.ac.uk/projects/fastqc/
 
-MULTIQC
+The total FastQC results can be aggregated using MultiQC
+https://github.com/ewels/MultiQC
 
-TRIM GALORE
+The adapter contamination should be removed with an adapter trimmer of reads such us TrimGalore
+https://github.com/FelixKrueger/TrimGalore
 
-TRINITY
+# De novo transcriptome assembly
+Trinity assembles transcript sequences from llumina RNA-Seq data. If your job is going to run on a server we suggest better use the Docker image with no additional installation required
+https://github.com/trinityrnaseq/trinityrnaseq/wiki/Trinity-in-Docker
+
+example command: 
+Trinity --seqType fq --samples_file samples.txt --SS_lib_type RF --CPU 60 --max_memory 450G
+
+where samples.txt is a tab-delimited text file indicating biological replicate relationships
+
+# Transcriptome annotation
+
+
+
 
 TRANSDECODER
 
